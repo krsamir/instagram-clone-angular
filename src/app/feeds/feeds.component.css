@@ -1,0 +1,121 @@
+.feed__parent {
+  background-color: #ebebeb;
+}
+
+.card-title {
+  width: fit-content;
+  padding: 30px;
+}
+.bhaiya {
+  display: flex;
+  justify-content: flex-start;
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.bhaiya_status {
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.status__card,
+.account_name {
+  margin-top: 100px;
+}
+
+.status__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+}
+.profile_status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.status__text {
+  margin-left: 15px;
+}
+
+.feeds {
+  margin-top: 20px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.circle svg {
+  fill: none;
+  stroke: #8a3ab9;
+  stroke-linecap: round;
+  stroke-width: 3;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: stroke-draw 6s ease-out infinite alternate;
+  /* animation: stroke-draw 6s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate; */
+}
+.circle img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  border-radius: 50%;
+}
+@keyframes stroke-draw {
+  from {
+    stroke: #8a3ab9;
+    stroke-dasharray: 1;
+  }
+  to {
+    stroke: #cd486b;
+    transform: rotate(180deg);
+    stroke-dasharray: 8;
+  }
+}
+
+.feed__topbar {
+  height: 80px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+}
+.circle {
+  margin-left: -10px;
+}
+.dots {
+  cursor: pointer;
+}
+.fullfeed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+.card__bottom {
+  height: auto;
+  margin: 5px 0px 5px 0px;
+}
+.feed__image {
+  max-height: 500px;
+  width: auto;
+  border-radius: 1px;
+  margin-bottom: 5px;
+}
+
+.feeds {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.circle svg {
+  fill: none;
+  stroke: #8a3ab9;
+  stroke-linecap: round;
+  stroke-width: 3;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: stroke-draw 6s ease-out infinite alternate;
+  /* animation: stroke-draw 6s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate; */
+}
+.circle img {
+  margin-top: -5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  border-radius: 50%;
+}
+@keyframes stroke-draw {
+  from {
+    stroke: #8a3ab9;
+    stroke-dasharray: 1;
+  }
+  to {
+    stroke: #cd486b;
+    transform: rotate(180deg);
+    stroke-dasharray: 8;
+  }
+}
+
+.card__top {
+  padding-top: 80px;
+  background-color: #ebebeb;
+}
+
+.card {
+  height: 150px;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+}
+
+span {
+  margin-left: 35px;
+}
+.right__top {
+  position: fixed;
+}
+
+.right__account {
+  display: flex;
+  flex-direction: row;
+}
+.account {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.account__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.description {
+  color: #8b8b8d;
+  font-size: small;
+  white-space: nowrap;
+}
+
+.right__sidebar {
+  color: rgb(44, 140, 204);
+  cursor: pointer;
+}
+.right__middle {
+  padding-top: 90px;
+}
+.suggestion {
+  font-weight: 700;
+}
+.seeall {
+  font-weight: 500;
+}

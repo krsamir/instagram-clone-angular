@@ -1,0 +1,35 @@
+<div class="feed__parent">
+    <div>
+        <div class="row">
+            <div class="col-3">
+
+            </div>
+            <div class="col-5">
+                <div class="card feeds" style="width:100%;" *ngFor="let value of data">
+                    <div class="fullfeed">
+                        <div class="feed__topbar">
+                            <div class="circle">
+                                <img src={{value.profilepic}} alt="" />
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                    style="enable-background:new -580 439 577.9 194;" xml:space="preserve">
+                                    <circle cx="50" cy="50" r="25" />
+                                </svg>
+                            </div>
+                            <span>{{value.name}}</span>
+                        </div>
+                        <strong class="dots">...</strong>
+                    </div>
+                    <img src={{value.image}} class="card-img-top feed__image">
+
+                    <div class="card__bottom">
+                        {{value.commentText}}
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4">
+
+            </div>
+        </div>
+    </div>
+</div>

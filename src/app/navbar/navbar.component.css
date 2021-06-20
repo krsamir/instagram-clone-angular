@@ -1,0 +1,53 @@
+.parents {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100 !important;
+}
+
+.second {
+  display: flex;
+  align-items: center;
+}
+
+.dummy {
+  flex: 1;
+}
+.third {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.searchbox {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(238, 238, 238);
+}
+
+.first {
+  display: flex;
+  align-items: center;
+}
+.first__profile {
+  margin-left: 150px;
+  cursor: pointer;
+}
+
+.home,
+.messgae,
+.compass,
+.like,
+.avatar {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.avatar {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 30px;
+}

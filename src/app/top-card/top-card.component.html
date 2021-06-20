@@ -1,0 +1,48 @@
+<div class="card__top">
+  <div>
+    <div class="row">
+      <div class="col-3">
+      </div>
+      <div class="col-5">
+        <div class="card">
+          <div class="card-body status">
+            <div class="circle" *ngFor="let value of data">
+              <img src={{value.image}} alt={{value.name}} />
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                style="enable-background:new -580 439 577.9 194;" xml:space="preserve">
+                <circle cx="50" cy="50" r="40" />
+              </svg>
+              <span>{{value.name}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="right__top">
+          <div class="account_name row">
+            <div class="col-9 right__account">
+              <img class="account"
+                src="https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half-caption/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=0hb44OrI">
+              <div class="account__text">
+                <strong>
+                  wedmist_education
+                </strong>
+                <p class="description">Wedmist Educational Service</p>
+              </div>
+            </div>
+            <div class="col-3 right__sidebar">Switch</div>
+          </div>
+          <div class="right__middle row">
+            <div class="col-9 suggestion">
+              Suggestion For You
+          </div>
+          <div class="col-3 seeall">See All</div>
+        </div>
+        <div class="right__bottom">
+          <app-right-sidebar></app-right-sidebar>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
